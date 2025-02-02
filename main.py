@@ -1,3 +1,4 @@
+#SCRIPT CREADO PARA ENCONTRAR PATRONES EN ARCHIVOS Y RENOMBRARLOS 
 import os
 
 #ingreso los patrones a borrar y agregar
@@ -21,3 +22,4 @@ for elemento in elementos:
         print(f"Renombrado {elemento.name} a {nuevo_nombre}")
 
 
+#Creado por Brandon Sanchez | 2/Febrero/2025
