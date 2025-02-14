@@ -3,8 +3,8 @@ import os
 
 patron_a_agregar = input("Ingrese el patron a agregar: ")
 
-elementos = os.scandir(os.getcwd())
-directorio = os.getcwd()
+directorio = input("Dame la direccion donde agregar el patron")
+elementos = os.scandir(directorio)
 
 for elemento in elementos:
     if elemento.is_file() and not elemento.name.endswith(".py"):

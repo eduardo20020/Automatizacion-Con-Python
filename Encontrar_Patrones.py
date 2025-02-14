@@ -7,8 +7,8 @@ patron_a_agregar = input("Ingrese el patron a agregar: ")
 
 
 #listo los elementps del directorio actual y guardo la ruta
-elementos = os.scandir(os.getcwd())
-directorio = os.getcwd()
+directorio = input("Dame la rita deldirectorio: ")
+elementos = os.scandir(directorio)
 
 
 #recorro los elementos del directorio para encontrar el patron y renombrar el archivo
