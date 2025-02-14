@@ -15,7 +15,6 @@ with os.scandir(directorio) as archivos:
                 fecha_str = coincidencia.group(1)
                 fecha = datetime.strptime(fecha_str, "%d%m%y")
                 
-                # Formatear la fecha para usarla como nombre de carpeta (por ejemplo: "26.01.2025")
                 nombre_carpeta = fecha.strftime("%d.%m.%Y")
                 ruta_carpeta = os.path.join(directorio, nombre_carpeta)
                 
