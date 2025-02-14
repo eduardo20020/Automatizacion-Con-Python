@@ -1,17 +1,14 @@
 #SCRIPT CREADO PARA ENCONTRAR PATRONES EN ARCHIVOS Y RENOMBRARLOS 
 import os
 
-#ingreso los patrones a borrar y agregar
 patron_a_borrar = input("Ingrese el patron a borrar: ")
 patron_a_agregar = input("Ingrese el patron a agregar: ")
 
 
-#listo los elementps del directorio actual y guardo la ruta
 directorio = input("Dame la rita deldirectorio: ")
 elementos = os.scandir(directorio)
 
 
-#recorro los elementos del directorio para encontrar el patron y renombrar el archivo
 for elemento in elementos:
     if elemento.is_file():
         
